@@ -20,6 +20,15 @@ public class OriginalScore implements GameScore{
     */
     @Override
     public int calculateScore(int correctCount, int incorrectCount){
-        return null;
+        if(correctCount < 0 || incorrectCount < 0){
+            score = 100;
+        }
+        if(incorrectCount > 0){
+            score -= incorrectCount * 10;
+        }
+        if(score < 0){
+            score = 0;
+        }
+        return score;
     }
 }
