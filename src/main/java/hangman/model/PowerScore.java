@@ -1,7 +1,10 @@
 package hangman.model;
 import java.awt.*;
 
-
+/**
+ * @author Jeisson Casallas & Oscar Lesmes
+ * @version 1.0
+ */
 public class PowerScore implements GameScore{
 private int score = 0;
 
